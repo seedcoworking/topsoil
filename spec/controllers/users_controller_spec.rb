@@ -5,7 +5,7 @@ describe UsersController do
     it 'lists all valid users' do
       user = FactoryGirl.create :user
       get :index
-      assigns(:users).should eq [user]
+      response.body.should == [ user ].to_json
     end
   end
 
