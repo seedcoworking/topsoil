@@ -23,4 +23,10 @@ describe User do
     product.should_not be_valid
     product.errors[:email].should include 'is invalid'
   end
+
+  describe '.to_json' do
+    it 'contains the card information' do
+      @subject.to_json.should have_json_path "card"
+    end
+  end
 end
