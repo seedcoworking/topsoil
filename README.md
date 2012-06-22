@@ -41,6 +41,8 @@ Topsoil allows administrators to add users, cards, and plans to a database and r
 		plan: {
 			id: 1,
 			name: "Unlimited",
+			price: 175,
+			limit: 12,
 			created_at: "2012-05-16T11:32:12Z",
 			updated_at: "2012-05-16T11:32:12Z",
 			schedule: {
@@ -111,6 +113,8 @@ Topsoil allows administrators to add users, cards, and plans to a database and r
 			plan: {
 				id: 1,
 				name: "Unlimited",
+				price: 175,
+				limit: 12,
 				created_at: "2012-05-16T11:32:12Z",
 				updated_at: "2012-05-16T11:32:12Z",
 				schedule: {
@@ -171,6 +175,8 @@ Topsoil allows administrators to add users, cards, and plans to a database and r
 			plan: {
 				id: 2,
 				name: "Medium",
+				price: 85,
+				limit: 40,
 				created_at: "2012-05-16T12:00:18Z",
 				updated_at: "2012-05-16T12:00:18Z",
 				schedule: {
@@ -228,6 +234,8 @@ Topsoil allows administrators to add users, cards, and plans to a database and r
 		plan: {
 			id: 1,
 			name: "Unlimited",
+			price: 175,
+			limit: 12,
 			created_at: "2012-05-16T11:32:12Z",
 			updated_at: "2012-05-16T11:32:12Z",
 			schedule: {
@@ -273,6 +281,8 @@ Topsoil allows administrators to add users, cards, and plans to a database and r
 		plan: {
 			id: 2,
 			name: "Medium",
+			price: 85,
+			limit: 40,
 			created_at: "2012-05-16T12:00:18Z",
 			updated_at: "2012-05-16T12:00:18Z",
 			schedule: {
