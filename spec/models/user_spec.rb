@@ -28,5 +28,17 @@ describe User do
     it 'contains the card information' do
       @subject.to_json.should have_json_path "card"
     end
+
+    it 'does not contain a repetative card_id' do
+      @subject.to_json.should_not have_json_path "card_id"
+    end
+
+    it 'contains the plan information' do
+      @subject.to_json.should have_json_path "plan"
+    end
+
+    it 'does not contain a repetative plan_id' do
+      @subject.to_json.should_not have_json_path "plan_id"
+    end
   end
 end
