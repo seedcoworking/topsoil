@@ -11,13 +11,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120622050955) do
+ActiveRecord::Schema.define(:version => 20120625211420) do
 
   create_table "cards", :force => true do |t|
     t.string   "identifier"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "days", :force => true do |t|
+    t.string   "name"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.integer  "plan_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "days", ["plan_id"], :name => "index_days_on_plan_id"
 
   create_table "plans", :force => true do |t|
     t.string   "name"
