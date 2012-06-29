@@ -2,8 +2,8 @@ class CreateDays < ActiveRecord::Migration
   def change
     create_table :days do |t|
       t.string :name
-      t.timestamp :start_time
-      t.timestamp :end_time
+      t.string :start_time
+      t.string :end_time
       t.integer :plan_id
 
       t.timestamps
