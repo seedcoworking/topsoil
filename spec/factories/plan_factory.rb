@@ -8,6 +8,7 @@ FactoryGirl.define do
     name 'Medium'
     price 85
     limit 40
+    days { |day| [day.association(:monday)]  }
   end
 
   factory :unlimited, class: Plan do

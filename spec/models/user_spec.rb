@@ -37,6 +37,10 @@ describe User do
       @subject.to_json.should have_json_path "plan"
     end
 
+    it 'contains the plans schedule ' do
+      @subject.to_json.should have_json_path "plan/schedule"
+    end
+
     it 'does not contain a repetative plan_id' do
       @subject.to_json.should_not have_json_path "plan_id"
     end
