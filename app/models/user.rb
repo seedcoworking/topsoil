@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
   validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i
 
  def as_json(options={})
-    options[:include] ||= [ :card, :plan ]
+    options[:include] ||= [ :card, :plan => { :include => :schedule } ]
     options[:except] ||= [ :card_id, :plan_id ]
     super options
   end

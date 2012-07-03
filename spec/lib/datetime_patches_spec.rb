@@ -1,5 +1,4 @@
 require 'spec_helper'
-require './lib/datetime_patches'
 
 describe DateTime do
   describe ".to_stime" do
